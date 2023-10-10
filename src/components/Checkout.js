@@ -34,13 +34,13 @@ const Checkout = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Simular la creación de una orden
+    
     setIsLoading(true);
     setTimeout(() => {
       const newOrderId = generateRandomOrderId();
       setOrderId(newOrderId);
       setIsLoading(false);
-      clearCart(); // Limpiar el carrito después de crear la orden (puedes ajustar esto según tus necesidades)
+      clearCart(); 
     }, 2000);
   };
 

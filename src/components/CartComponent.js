@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
-import { CartContext } from './ruta/a/CartContext'; // Asegúrate de reemplazar esto con la ruta correcta a tu archivo CartContext
-import CartItem from './ruta/a/CartItem'; // Asegúrate de reemplazar esto con la ruta correcta a tu archivo CartItem
+import { CartContext } from './ruta/a/CartContext'; 
+import CartItem from './ruta/a/CartItem'; 
 
 const CartComponent = () => {
   const { cart, removeItem } = useContext(CartContext);
