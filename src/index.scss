@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Estilos para el artículo */
+.article {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilos para el título */
+  .article header h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos para la imagen */
+  .article picture img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: contain;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para la sección de detalles */
+  .article section p {
+    margin-bottom: 10px;
+    color: #333333;
+  }
+  
+  /* Estilos para el botón "Sí" */
+  .article footer button.sí {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Estilos para el botón "Sí" al pasar el mouse */
+  .article footer button.sí:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Estilos para el botón "No" */
+  .article footer button.no {
+    background-color: #cccccc;
+    color: #333333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Estilos para el botón "No" al pasar el mouse */
+  .article footer button.no:hover {
+    background-color: #999999;
+  }
+  

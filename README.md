@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# Proyecto de E-commerce en React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto es una aplicación web de comercio electrónico desarrollada en React. Permite a los usuarios explorar productos, agregarlos al carrito, realizar el procxso de checkout y más.
 
-## Available Scripts
 
-In the project directory, you can run:
+# Funcionalidades Principales
+ 
+Explorar Productos: Los usuarios pueden navegar por la lista de productos en diferentes categorías (Remera, Pantalón, Buzo) usando la barra de navegación.
 
-### `npm start`
+Ver Detalles del Producto: Al hacer clic en un producto, los usuarios pueden ver más detalles sobre ese producto, incluyendo su nombre, precio, descripción y stock disponible.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Agregar al Carrito: Los usuarios pueden agregar productos a su carrito de compras, especificando la cantidad deseada.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Carrito de Compras: Los usuarios pueden ver los productos que han agregado al carrito, así como el subtotal de la compra. También pueden eliminar productos del carrito.
 
-### `npm test`
+Proceso de Checkout: Los usuarios pueden proceder al proceso de checkout, donde proporcionan su información personal (nombre, teléfono, email) para crear una orden ficticia. Después de crear la orden, el carrito se limpia.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Navegación: La aplicación utiliza React Router para la navegación entre páginas.
 
-### `npm run build`
+# Estructura del Proyecto
+src/components: Contiene los componentes de React utilizados en la aplicación, como NavBar, Item, ItemDetail, Cart, Checkout, etc.
+src/context: Contiene el contexto de carrito de compras (CartContext) y su proveedor (CartProvider) para administrar el estado global del carrito.
+src/data: Contiene datos de ejemplo de productos y funciones de acceso a datos ficticios para simular la obtención de productos y detalles de productos.
+src/App.js: Es el punto de entrada principal de la aplicación donde se configuran las rutas y se utiliza el proveedor de contexto.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Correcciones
+Corregi las rutas y ahora se puede navegar dentro de las paginas
 
-### `npm run eject`
+Agrege un formulario para validar la compra que la persona pueda recibir el numero de orden
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Punto no realizado
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Firebase
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## explicacion del porque no se realizo 
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+la verdad se me complico estaba haciendo bien el principio pero nose que toque que me dejo de aparecer los productos y no pude encontrar la solucion y por solucionar mi cartItem se desconfiguro nose que toque pero recibe el producto pero la cantidad,el subtotal y el total no figura
